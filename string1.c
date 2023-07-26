@@ -53,23 +53,23 @@ void _puts(char *str)
 char *_strcpy(char *dest, char *src)
 {
         int i = 0;
-
-        if (dest == src || src == 0)
-                return (dest);
-        while (src[i])
+	
+	if (dest == src || src == 0)
+		return (dest);
+	while (src[i])
         {
-                dest[i] = src[i];
-                i++;
+		dest[i] = src[i];
+		i++;
         }
-        dest[i] = 0;
-        return (dest);
+	dest[i] = 0;
+	return (dest);
 }
 
 /**
 * _putchar - Write the character c to stdout
 * @c: The character to print
 *
-* Return: 1 on success
+* Return: 1 success
 * On error, -1 and errno is set appropriately.
 */
 
