@@ -54,8 +54,8 @@ int write_history(info_t *info)
 }
 
 /**
- * read_history - reads history from file
- * @info: the parameter struct
+ * read_history - Reads history from file
+ * @info: Parameter struct
  *
  * Return: histcount on success, 0 otherwise
  */
@@ -103,7 +103,7 @@ int read_history(info_t *info)
 }
 
 /**
- * build_history_list - adds entry to a history linked list
+ * build_history_list - Add entry to a history linked list
  * @info: Structure containing potential arguments. Used to maintain
  * @buf: buffer
  * @linecount: the history linecount, histcount
@@ -124,7 +124,7 @@ int build_history_list(info_t *info, char *buf, int linecount)
 }
 
 /**
- * renumber_history - renumbers the history linked list after changes
+ * renumber_history - Renumber the history linked list after changes
  * @info: Structure containing potential arguments. Used to maintain
  *
  * Return: the new histcount
